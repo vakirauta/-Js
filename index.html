@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Box Shadow</h1>
+    <div class="twocolumns">
+    <div id="wrapper" class="shadow">
+        <div class="setting-block">
+            <div class="row">
+                <label class="text" for="horizontal-Length">Horizontal Length</label>
+                
+                
+                <label class="align-right" for="horizontal-Length">px</label>
+                    <div class="text-1">
+                        <input id="horizontal-Length" type="text" value="0">
+                    </div>
+            </div> 
+            <input  type="range" min="-200" value="0" max="200" class="horizontal-Length input"> 
+            <div class="row mtop15">
+                    <label class="text" for="vertical-Length">Vertical Length</label>
+                    
+                    
+                    <label class="align-right" for="vertical-Length">px</label>
+                        <div class="text-1">
+                            <input id="vertical-Length" type="text" value="0">
+                        </div>
+                </div> 
+                <input type="range" min="-200" value="0" max="200" class="vertical-Length input">
+        </div>
+        <div class="setting-block">
+                <div class="row">
+                    <label class="text" for="blur-radius">Blur Radius</label>
+                    
+                    
+                    <label class="align-right" for="blur-radius">px</label>
+                        <div class="text-1">
+                            <input id="blur-radius" type="text" value="0">
+                        </div>
+                </div> 
+                <input  type="range" min="0" value="0" max="200" class="blur-radius input"> 
+                <div class="row mtop15">
+                        <label class="text" for="spread-field">Spread Radius</label>
+                        
+                        
+                        <label class="align-right" for="spread-field">px</label>
+                            <div class="text-1">
+                                <input id="spread-field" type="text" value="0">
+                            </div>
+                    </div> 
+                    <input type="range" min="-200" value="0" max="200" class="spread-field input">
+            </div>
+    </div>
+    <div id="box-shadow-wrapper" class="right-column">
+        <div class="box-wrap">
+            <div id="box-shadow-code" class="content">
+                <div>-webkit-box-shadow: -200px 10px 5px 0px rgba(0,0,0,0.75);</div>
+                <div>-moz-box-shadow: -200px 10px 5px 0px rgba(0,0,0,0.75);</div>
+                <div>box-shadow: -200px 10px 5px 0px rgba(0,0,0,0.75);</div>
+            </div>
+            <div id="box-shadow-panel">
+                <div id="box-shadow-object"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
